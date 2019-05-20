@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\test2\\MoviesApi\\MoviesApi.csproj": {}
+    "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\web4-backend\\MoviesApi\\MoviesApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\test2\\MoviesApi\\MoviesApi.csproj": {
+    "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\web4-backend\\MoviesApi\\MoviesApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\test2\\MoviesApi\\MoviesApi.csproj",
+        "projectUniqueName": "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\web4-backend\\MoviesApi\\MoviesApi.csproj",
         "projectName": "MoviesApi",
-        "projectPath": "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\test2\\MoviesApi\\MoviesApi.csproj",
+        "projectPath": "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\web4-backend\\MoviesApi\\MoviesApi.csproj",
         "packagesPath": "C:\\Users\\Anthony Van Noppen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\test2\\MoviesApi\\obj\\",
+        "outputPath": "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\web4-backend\\MoviesApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

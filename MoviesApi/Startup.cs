@@ -26,6 +26,14 @@ namespace MoviesApi
         {
             services.AddOpenApiDocument();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddOpenApiDocument(c =>
+            {
+                c.DocumentName = "apidocs";
+                c.Title = "MovieAPI";
+                c.Version = "v1";
+                c.Description = "The MovieAPI documentationdescription.";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
