@@ -7,5 +7,8 @@ namespace MoviesApi.DTOs
 {
     public class ActorDTO
     {
+        public string Name { get; set; }
+
+        public DateTime BirthDate { get; set; }
     }
 }
