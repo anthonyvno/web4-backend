@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MoviesApi.Models
 {
-    interface IMovieRepository
+    public interface IMovieRepository
     {
         Movie GetBy(int id);
         bool TryGetMovie(int id, out Movie movie);
