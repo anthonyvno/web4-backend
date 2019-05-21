@@ -20,12 +20,15 @@ namespace MoviesApi.Models
         public List<string> Categories { get; set; }
 
         public ICollection<Actor> Actors { get; private set; }
+        public ICollection<Comment> Comments { get; private set; }
+
         #endregion
 
         #region Constructors
         public Movie()
         {
             Actors = new List<Actor>();
+            Comments = new List<Comment>();
             //Score = 0;
             //Description = "";
         }
@@ -44,6 +47,9 @@ namespace MoviesApi.Models
         public void AddActor(Actor actor) => Actors.Add(actor);
 
         public Actor GetActor(int id) => Actors.SingleOrDefault(act => act.Id == id);
+        public void AddComment(Comment comment) => Comments.Add(comment);
+
+        public Comment GetComment(int id) => Comments.SingleOrDefault(com => com.Id == id);
         #endregion
     }
 }

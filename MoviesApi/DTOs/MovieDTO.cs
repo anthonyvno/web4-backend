@@ -18,5 +18,7 @@ namespace MoviesApi.DTOs
       
 
         public IList<ActorDTO> Actors { get; set; }
+        public IList<CommentDTO> Comments { get; set; }
+
     }
 }

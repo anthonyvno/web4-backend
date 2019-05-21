@@ -76,6 +76,8 @@ namespace MoviesApi.Controllers
             Movie movieToCreate = new Movie() { Name = movie.Name, Score = movie.Score, Description = movie.Description, DateRelease = movie.DateRelease };
             foreach (var a in movie.Actors)
                 movieToCreate.AddActor(new Actor(a.Name, a.BirthDate));
+            foreach (var c in movie.Comments)
+                movieToCreate.AddComment(new Comment(c.Content,c.PostedBy));
             _movieRepository.Add(movieToCreate);
             _movieRepository.SaveChanges();
 
@@ -152,6 +154,42 @@ namespace MoviesApi.Controllers
             movie.AddActor(actorToCreate);
             _movieRepository.SaveChanges();
             return CreatedAtAction("GetActor", new { id = movie.Id, actorId = actorToCreate.Id }, actorToCreate);
+        }
+
+        /// <summary>
+        /// Get an comment for a movie
+        /// </summary>
+        /// <param name="id">id of the movie</param>
+        /// <param name="commentId">id of the comment</param>
+        [HttpGet("{id}/comments/{commentId}")]
+        public ActionResult<Comment> GetComment(int id, int commentId)
+        {
+            if (!_movieRepository.TryGetMovie(id, out var movie))
+            {
+                return NotFound();
+            }
+            Comment comment = movie.GetComment(commentId);
+            if (comment == null)
+                return NotFound();
+            return comment;
+        }
+
+        /// <summary>
+        /// Adds an actor to a movie
+        /// </summary>
+        /// <param name="id">the id of the movie</param>
+        /// <param name="comment">the actor to be added</param>
+        [HttpPost("{id}/comments")]
+        public ActionResult<Comment> PostComment(int id, CommentDTO comment)
+        {
+            if (!_movieRepository.TryGetMovie(id, out var movie))
+            {
+                return NotFound();
+            }
+            var commentToCreate = new Comment(comment.Content, comment.PostedBy);
+            movie.AddComment(commentToCreate);
+            _movieRepository.SaveChanges();
+            return CreatedAtAction("GetComment", new { id = movie.Id, commentId = commentToCreate.Id }, commentToCreate);
         }
 
     }
