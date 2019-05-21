@@ -175,10 +175,10 @@ namespace MoviesApi.Controllers
         }
 
         /// <summary>
-        /// Adds an actor to a movie
+        /// Adds an comment to a movie
         /// </summary>
         /// <param name="id">the id of the movie</param>
-        /// <param name="comment">the actor to be added</param>
+        /// <param name="comment">the comment to be added</param>
         [HttpPost("{id}/comments")]
         public ActionResult<Comment> PostComment(int id, CommentDTO comment)
         {

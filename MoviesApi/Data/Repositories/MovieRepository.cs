@@ -20,17 +20,17 @@ namespace MoviesApi.Data.Repositories
 
         public IEnumerable<Movie> GetAll()
         {
-            return _movies.Include(r => r.Actors).ToList();
+            return _movies.Include(r => r.Actors).Include(r => r.Comments).ToList();
         }
 
         public Movie GetBy(int id)
         {
-            return _movies.Include(r => r.Actors).SingleOrDefault(r => r.Id == id);
+            return _movies.Include(r => r.Actors).Include(r=>r.Comments).SingleOrDefault(r => r.Id == id);
         }
 
         public bool TryGetMovie(int id, out Movie movie)
         {
-            movie = _context.Movies.Include(t => t.Actors).FirstOrDefault(t => t.Id == id);
+            movie = _context.Movies.Include(t => t.Actors).Include(r => r.Comments).FirstOrDefault(t => t.Id == id);
             return movie != null;
         }
 

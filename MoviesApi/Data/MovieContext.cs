@@ -38,7 +38,7 @@ namespace MoviesApi.Data
 
 
             builder.Entity<Actor>().Property(r => r.Name).IsRequired().HasMaxLength(50);
-            builder.Entity<Actor>().Property(r => r.BirthDate).IsRequired();
+            builder.Entity<Actor>().Property(r => r.BirthDate);
 
             builder.Entity<Comment>().Property(r => r.Content).IsRequired().HasMaxLength(50);
             builder.Entity<Comment>().Property(r => r.PostedBy).IsRequired();
@@ -54,7 +54,7 @@ namespace MoviesApi.Data
 
             //Another way to seed the database
             builder.Entity<Movie>().HasData(
-                new Movie { Id = 1, Name = "Titanic", Description = "droevige film", DateRelease = DateTime.Now, Score = 0, Categories = { "Horror", "Comedy" } }
+                new Movie { Id = 1, Name = "Titanic", Description = "droevige film", DateRelease = DateTime.Now, Score = 0, Categories = "Romance;Comedy" }
                 //new Movie { Id = 2, Name = "Tomato soup", Created = DateTime.Now }
   );
 

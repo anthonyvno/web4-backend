@@ -16,10 +16,10 @@ namespace MoviesApi.Models
         #endregion
 
         #region Constructors
-        public Actor(string name, DateTime birth)
+        public Actor(string name, DateTime birthDate)
         {
             Name = name;
-            BirthDate = birth;
+            BirthDate = birthDate;
         }
         #endregion
     }

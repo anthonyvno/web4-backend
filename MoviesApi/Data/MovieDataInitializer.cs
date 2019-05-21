@@ -23,7 +23,7 @@ namespace MoviesApi.Data
             _dbContext.Database.EnsureDeleted();
             if (_dbContext.Database.EnsureCreated())
             {
-                //seeding the database with recipes, see DBContext         
+                //seeding the database with movies, see DBContext         
                 Customer customer = new Customer { Email = "moviemaster@hogent.be", FirstName = "Adam", LastName = "Master" };
                 _dbContext.Customers.Add(customer);
                 await CreateUser(customer.Email, "P@ssword1111");

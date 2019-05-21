@@ -14,7 +14,7 @@ namespace MoviesApi.DTOs
         public string Description { get; set; }
 
         public DateTime DateRelease { get; set; }
-        public List<string> Categories { get; set; }
+        public string Categories { get; set; }
       
 
         public IList<ActorDTO> Actors { get; set; }

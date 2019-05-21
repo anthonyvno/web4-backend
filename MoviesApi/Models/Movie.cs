@@ -17,7 +17,7 @@ namespace MoviesApi.Models
         public string Description { get; set; }
 
         public DateTime DateRelease { get; set; }
-        public List<string> Categories { get; set; }
+        public string Categories { get; set; }
 
         public ICollection<Actor> Actors { get; private set; }
         public ICollection<Comment> Comments { get; private set; }
@@ -33,7 +33,7 @@ namespace MoviesApi.Models
             //Description = "";
         }
 
-        public Movie(string name, DateTime release, int score, string description, List<string> categories) : this()
+        public Movie(string name, DateTime release, int score, string description, string categories) : this()
         {
             Name = name;
             DateRelease = release;

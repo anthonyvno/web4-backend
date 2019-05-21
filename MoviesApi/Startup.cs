@@ -125,7 +125,7 @@ namespace MoviesApi
             app.UseSwagger();
             app.UseCors("AllowAllOrigins");
 
-            //movieDataInitializer.InitializeData().Wait();
+            movieDataInitializer.InitializeData().Wait();
 
         }
     }
