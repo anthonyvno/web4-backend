@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AVOBN94\\Documents\\testproject\\backendweb4\\web4-backend\\MoviesApi\\MoviesApi.csproj": {}
+    "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\web4-backend\\MoviesApi\\MoviesApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AVOBN94\\Documents\\testproject\\backendweb4\\web4-backend\\MoviesApi\\MoviesApi.csproj": {
+    "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\web4-backend\\MoviesApi\\MoviesApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AVOBN94\\Documents\\testproject\\backendweb4\\web4-backend\\MoviesApi\\MoviesApi.csproj",
+        "projectUniqueName": "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\web4-backend\\MoviesApi\\MoviesApi.csproj",
         "projectName": "MoviesApi",
-        "projectPath": "C:\\Users\\AVOBN94\\Documents\\testproject\\backendweb4\\web4-backend\\MoviesApi\\MoviesApi.csproj",
-        "packagesPath": "C:\\Users\\AVOBN94\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AVOBN94\\Documents\\testproject\\backendweb4\\web4-backend\\MoviesApi\\obj\\",
+        "projectPath": "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\web4-backend\\MoviesApi\\MoviesApi.csproj",
+        "packagesPath": "C:\\Users\\Anthony Van Noppen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anthony Van Noppen\\Documents\\HoGent\\3e\\Web4\\web4-backend\\MoviesApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\AVOBN94\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Anthony Van Noppen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

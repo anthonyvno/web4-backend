@@ -19,6 +19,8 @@ namespace MoviesApi.Models
         public DateTime DateRelease { get; set; }
         public string Categories { get; set; }
 
+        public string Picture { get; set; }
+
         public ICollection<Actor> Actors { get; private set; }
         public ICollection<Comment> Comments { get; private set; }
 
@@ -33,13 +35,14 @@ namespace MoviesApi.Models
             //Description = "";
         }
 
-        public Movie(string name, DateTime release, int score, string description, string categories) : this()
+        public Movie(string name, DateTime release, int score, string description, string categories,string picture) : this()
         {
             Name = name;
             DateRelease = release;
             Score = score;
             Description = description;
             Categories = categories;
+            Picture = picture;
         }
         #endregion
 

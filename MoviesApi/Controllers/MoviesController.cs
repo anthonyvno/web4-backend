@@ -71,9 +71,10 @@ namespace MoviesApi.Controllers
         /// </summary>
         /// <param name="movie">the new movie</param>
         [HttpPost]
+        [AllowAnonymous]
         public ActionResult<Movie> PostMovie(MovieDTO movie)
         {
-            Movie movieToCreate = new Movie() { Name = movie.Name, Score = movie.Score, Description = movie.Description, DateRelease = movie.DateRelease };
+            Movie movieToCreate = new Movie() { Name = movie.Name, Score = movie.Score, Description = movie.Description, DateRelease = movie.DateRelease, Picture = movie.Picture, Categories=movie.Categories };
             foreach (var a in movie.Actors)
                 movieToCreate.AddActor(new Actor(a.Name, a.BirthDate));
             foreach (var c in movie.Comments)

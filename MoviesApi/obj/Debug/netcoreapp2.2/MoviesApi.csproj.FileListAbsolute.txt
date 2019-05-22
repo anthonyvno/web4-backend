@@ -44,3 +44,19 @@ C:\Users\punan\Documents\HoGent\J3S2\w4b\web4-backend\MoviesApi\obj\Debug\netcor
 C:\Users\punan\Documents\HoGent\J3S2\w4b\web4-backend\MoviesApi\obj\Debug\netcoreapp2.2\MoviesApi.dll
 C:\Users\punan\Documents\HoGent\J3S2\w4b\web4-backend\MoviesApi\obj\Debug\netcoreapp2.2\MoviesApi.xml
 C:\Users\punan\Documents\HoGent\J3S2\w4b\web4-backend\MoviesApi\obj\Debug\netcoreapp2.2\MoviesApi.pdb
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\bin\Debug\netcoreapp2.2\MoviesApi.deps.json
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\bin\Debug\netcoreapp2.2\MoviesApi.runtimeconfig.json
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\bin\Debug\netcoreapp2.2\MoviesApi.runtimeconfig.dev.json
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\bin\Debug\netcoreapp2.2\MoviesApi.dll
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\bin\Debug\netcoreapp2.2\MoviesApi.pdb
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\bin\Debug\netcoreapp2.2\MoviesApi.xml
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\obj\Debug\netcoreapp2.2\MoviesApi.csprojAssemblyReference.cache
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\obj\Debug\netcoreapp2.2\MoviesApi.csproj.CoreCompileInputs.cache
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\obj\Debug\netcoreapp2.2\MoviesApi.RazorAssemblyInfo.cache
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\obj\Debug\netcoreapp2.2\MoviesApi.RazorAssemblyInfo.cs
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\obj\Debug\netcoreapp2.2\MoviesApi.AssemblyInfoInputs.cache
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\obj\Debug\netcoreapp2.2\MoviesApi.AssemblyInfo.cs
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\obj\Debug\netcoreapp2.2\MoviesApi.RazorTargetAssemblyInfo.cache
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\obj\Debug\netcoreapp2.2\MoviesApi.dll
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\obj\Debug\netcoreapp2.2\MoviesApi.xml
+C:\Users\Anthony Van Noppen\Documents\HoGent\3e\Web4\web4-backend\MoviesApi\obj\Debug\netcoreapp2.2\MoviesApi.pdb

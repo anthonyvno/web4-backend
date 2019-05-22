@@ -33,6 +33,7 @@ namespace MoviesApi.Data
             builder.Entity<Movie>().Property(r => r.Score);
             builder.Entity<Movie>().Property(r => r.DateRelease);
             builder.Entity<Movie>().Property(r => r.Categories);
+            builder.Entity<Movie>().Property(r => r.Picture);
 
 
 
@@ -54,7 +55,9 @@ namespace MoviesApi.Data
 
             //Another way to seed the database
             builder.Entity<Movie>().HasData(
-                new Movie { Id = 1, Name = "Titanic", Description = "droevige film", DateRelease = DateTime.Now, Score = 0, Categories = "Romance;Comedy" }
+                new Movie { Id = 1, Name = "Titanic", Description = "droevige film", DateRelease = DateTime.Now, Score = 10, Categories = "Romance;Comedy",
+                    Picture = "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg"
+                }
                 //new Movie { Id = 2, Name = "Tomato soup", Created = DateTime.Now }
   );
 
