@@ -24,9 +24,9 @@ namespace MoviesApi.Data
             if (_dbContext.Database.EnsureCreated())
             {
                 //seeding the database with movies, see DBContext         
-                Customer customer = new Customer { Email = "web4", FirstName = "Adam", LastName = "Master" };
+                Customer customer = new Customer { Email = "web4@web4.com", FirstName = "web4", LastName = "web4" };
                 _dbContext.Customers.Add(customer);
-                await CreateUser(customer.Email, "gelukkiggeennetbeans");
+                await CreateUser(customer.Email, "1Gelukkig.geennetbeans");
                 Customer student = new Customer { Email = "test@test.com", FirstName = "Student", LastName = "Hogent" };
                 _dbContext.Customers.Add(student);
                 student.AddFavoriteMovie(_dbContext.Movies.First());
