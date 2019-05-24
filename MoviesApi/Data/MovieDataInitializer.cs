@@ -24,13 +24,13 @@ namespace MoviesApi.Data
             if (_dbContext.Database.EnsureCreated())
             {
                 //seeding the database with movies, see DBContext         
-                Customer customer = new Customer { Email = "moviemaster@hogent.be", FirstName = "Adam", LastName = "Master" };
+                Customer customer = new Customer { Email = "web4", FirstName = "Adam", LastName = "Master" };
                 _dbContext.Customers.Add(customer);
-                await CreateUser(customer.Email, "P@ssword1111");
-                Customer student = new Customer { Email = "student@hogent.be", FirstName = "Student", LastName = "Hogent" };
+                await CreateUser(customer.Email, "gelukkiggeennetbeans");
+                Customer student = new Customer { Email = "test@test.com", FirstName = "Student", LastName = "Hogent" };
                 _dbContext.Customers.Add(student);
                 student.AddFavoriteMovie(_dbContext.Movies.First());
-                await CreateUser(student.Email, "P@ssword1111");
+                await CreateUser(student.Email, ".Password1");
                 _dbContext.SaveChanges();
             }
         }

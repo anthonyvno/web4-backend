@@ -9,6 +9,7 @@ namespace MoviesApi.Models
     {
         Customer GetBy(string email);
         void Add(Customer customer);
+        void Update(Customer customer);
         void SaveChanges();
     }
 }

@@ -65,6 +65,24 @@ namespace MoviesApi.Controllers
             return customer.FavoriteMovies;
         }
 
+        /// <summary>
+        /// Post a favorite movie of current user
+        /// </summary>
+        /// <param name="movie">the movie to be added</param>
+        [HttpPost("Favorites")]
+        public IActionResult addFavorite(Movie movie)
+        {
+            if (!_movieRepository.TryGetMovie(movie.Id, out var mov))
+            {
+                return NotFound();
+            }
+            Customer customer = _customerRepository.GetBy(User.Identity.Name);
+            customer.AddFavoriteMovie(mov);
+            _customerRepository.Update(customer);
+            _customerRepository.SaveChanges();
+            return NoContent();
+        }
+
         // POST: api/Movies
         /// <summary>
         /// Adds a new movie

@@ -27,6 +27,10 @@ namespace MoviesApi.Data.Repositories
         {
             _customers.Add(customer);
         }
+        public void Update(Customer customer)
+        {
+            _context.Update(customer);
+        }
 
         public void SaveChanges()
         {

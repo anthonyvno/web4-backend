@@ -18,6 +18,7 @@ namespace MoviesApi.Models
 
         public DateTime DateRelease { get; set; }
         public string Categories { get; set; }
+        public string Voted { get; set; }
 
         public string Picture { get; set; }
 
@@ -31,6 +32,7 @@ namespace MoviesApi.Models
         {
             Actors = new List<Actor>();
             Comments = new List<Comment>();
+            Voted = "";
             //Score = 0;
             //Description = "";
         }

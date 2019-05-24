@@ -67,12 +67,12 @@ namespace MoviesApi.Data
                  // new { Id = 2, Name = "Minced Meat", Amount = (double?)500, Unit = "grams", MovieId = 1 },
                  //new { Id = 3, Name = "Onion", Amount = (double?)2, MovieId = 1 }
                  );
-            builder.Entity<Comment>().HasData(
+           /* builder.Entity<Comment>().HasData(
                     //Shadow property can be used for the foreign key, in combination with anaonymous objects
                     new { Id = 1, Content = "Dat was een leuke film", PostedBy="Mark", MovieId = 1 }
                  // new { Id = 2, Name = "Minced Meat", Amount = (double?)500, Unit = "grams", MovieId = 1 },
                  //new { Id = 3, Name = "Onion", Amount = (double?)2, MovieId = 1 }
-                 );
+                 );*/
         }
 
         public DbSet<Movie> Movies { get; set; }
