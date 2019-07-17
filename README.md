@@ -1,2 +1,2 @@
-# web4-backend
-backend voor project web4 2019
+# backend aan de hand van cursus web4
+
